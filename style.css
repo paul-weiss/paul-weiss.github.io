@@ -1,0 +1,15 @@
+h1 {
+    font-family: Perpetua;
+}
+
+body {
+    font-family: Perpetua;
+    font-size: large;
+    color: #F5F5F5;
+    background-color: #000000;
+}
+
+textarea {
+    color: #3ADF00;
+    background-color: #2E2E2E;
+}
