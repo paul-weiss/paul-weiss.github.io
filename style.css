@@ -6,10 +6,50 @@ body {
     font-family: Perpetua;
     font-size: large;
     color: #F5F5F5;
-    background-color: #000000;
+    background-color: #202060;
 }
 
 textarea {
     color: #3ADF00;
     background-color: #2E2E2E;
+}
+
+tr:nth-of-type(odd) {
+    background-color: #000080;
+}
+
+/* unvisited link */
+a:link {
+    color: lightgreen;
+}
+
+/* visited link */
+a:visited {
+    color: darkgray;
+}
+
+/* mouse over link */
+a:hover {
+    color: orange;
+}
+
+/* selected link */
+a:active {
+    color: lightblue;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+a:visited {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+a:active {
+    text-decoration: underline;
 }
