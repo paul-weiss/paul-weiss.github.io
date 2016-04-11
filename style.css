@@ -6,7 +6,12 @@ body {
     font-family: Perpetua;
     font-size: large;
     color: #F5F5F5;
-    background-color: #202060;
+    background-color: #070047;
+}
+
+td {
+    font-family: Perpetua;
+    font-size: large;
 }
 
 textarea {
@@ -15,7 +20,7 @@ textarea {
 }
 
 tr:nth-of-type(odd) {
-    background-color: #000080;
+    background-color: #07011a;
 }
 
 /* unvisited link */
