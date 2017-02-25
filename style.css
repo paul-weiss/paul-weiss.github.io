@@ -6,7 +6,7 @@ body {
     font-family: Perpetua;
     font-size: large;
     color: #F5F5F5;
-    background-color: #708090;
+    background-color: #2F4F4F;
 }
 
 td {
@@ -16,7 +16,7 @@ td {
 
 textarea {
     color: #3ADF00;
-    background-color: #708090;
+    background-color: #2F4F4F;
 }
 
 tr:nth-of-type(odd) {
