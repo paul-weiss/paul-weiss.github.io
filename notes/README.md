@@ -1,4 +1,5 @@
 ### Notes
 
-
+* Replicator
+* Binocular Rivalry
 
