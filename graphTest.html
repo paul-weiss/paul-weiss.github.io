@@ -95,7 +95,7 @@
 
         function changed() {
             timeout = clearTimeout(timeout);
-            (tree)(root);
+            (cluster)(root);
             var t = d3.transition().duration(750);
             node.transition(t).attr("transform", function(d) { return "translate(" + d.y + "," + d.x + ")"; });
             link.transition(t).attr("d", diagonal);
