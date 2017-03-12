@@ -1,0 +1,10 @@
+id,value
+ai,
+ai.NLP,
+ai.NeuralNetworks,
+ai.NeuralNetworks.LinearAlgebra,
+ai.NeuralNetworks.Perceptron,
+ai.NeuralNetworks.Probability,
+ai.GeneticProgramming,
+ai.GeneticProgramming.Genetics,
+ai.MachineLearning
