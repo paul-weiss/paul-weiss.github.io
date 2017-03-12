@@ -7,4 +7,14 @@ ai.NeuralNetworks.Perceptron,
 ai.NeuralNetworks.Probability,
 ai.GeneticProgramming,
 ai.GeneticProgramming.Genetics,
-ai.MachineLearning
+ai.GeneticProgramming.Genetics.Crossover,
+ai.GeneticProgramming.Genetics.Mutation,
+ai.GeneticProgramming.Genetics.Replication,
+ai.GeneticProgramming.Evolution,
+ai.GeneticProgramming.Evolution.Selection,
+ai.GeneticProgramming.Evolution.Variation,
+ai.GeneticProgramming.Evolution.Population,
+ai.MachineLearning,
+ai.MachineLearning.Statistics,
+ai.MachineLearning.Probability
+
