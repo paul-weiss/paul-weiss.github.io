@@ -5,8 +5,8 @@ h1 {
 body {
     font-family: Perpetua;
     font-size: large;
-    color: #F5F5F5;
-    background-color: #2F4F4F;
+    color: #000000;
+    background-color: #F5F5DC;
 }
 
 blockquote {
@@ -55,7 +55,7 @@ blockquote::after {
 
 blockquote a {
     text-decoration: none;
-    background: #eee;
+    background: beige;
     cursor: pointer;
     padding: 0 3px;
     color: #c76c0c;
@@ -80,7 +80,11 @@ textarea {
 }
 
 tr:nth-of-type(odd) {
-    background-color: #07011a;
+    background-color: beige;
+}
+
+tr:nth-of-type(even) {
+    background-color: sandybrown;
 }
 
 /* unvisited link */
@@ -356,7 +360,7 @@ table.tab2 {
     border-style: solid;
     border-color: gray;
     border-collapse: separate;
-    background-color: white;
+    background-color: beige;
 }
 
 table.tab2 th,
@@ -365,7 +369,7 @@ table.tab2 td {
     padding: 2px;
     border-style: inset;
     border-color: black;
-    background-color: #2F4F4F;
+    background-color: beige;
 }
 
 table.tab2cen td {
@@ -387,7 +391,7 @@ table.tab2rig td {
     left: 0px;
     margin: 0px;
     padding: 0px;
-    background: #ffffff;
+    background: beige;
     min-width: 800px;
     width: 100%;
     float: none !important;

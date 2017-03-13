@@ -35,92 +35,110 @@
 
 <h2>Daily</h2>
 
-<table>
+<table style="color: darkgreen">
     <tr>
         <th>Do</th>
-        <th>Don't</th>
     </tr>
     <tr>
-        <td style="background-color: darkgreen">Identify what's most important, eliminate rest (<a
+        <td>Identify what's most important, eliminate rest (<a
                 href="https://zenhabits.net/simple-living-manifesto-72-ideas-to-simplify-your-life/">Simple
             LivingManifesto</a>)
         </td>
-        <td style="background-color: red">Waste time</td>
     </tr>
     <tr>
-        <td style="background-color: darkgreen">Hike</td>
-        <td style="background-color: red">Make Excuses</td>
+        <td>Hike</td>
     </tr>
     <tr>
-        <td style="background-color: darkgreen">Play drums</td>
-        <td style="background-color: red">Let others decide for you</td>
+        <td>Play drums</td>
     </tr>
     <tr>
-        <td style="background-color: darkgreen">Focus on one short term goal at a time</td>
-        <td style="background-color: red">Get distracted</td>
+        <td>Focus on one short term goal at a time</td>
     </tr>
     <tr>
-        <td style="background-color: darkgreen">Work hard, be perfect in the things you can be</td>
-        <td style="background-color: red"></td>
+        <td>Work hard, be perfect in the things you can be</td>
     </tr>
     <tr>
-        <td style="background-color: darkgreen">Take risks with small downside and huge upside</td>
-        <td style="background-color: red"></td>
+        <td>Take risks with small downside and huge upside</td>
     </tr>
     <tr>
-        <td style="background-color: darkgreen">Fail small and often, get used to small failures</td>
-        <td style="background-color: red"></td>
+        <td>Fail small and often, get used to small failures</td>
+    </tr>
+</table>
+<br>
+<table style="color: darkred">
+    <tr>
+        <th>Don't</th>
+    </tr>
+    <tr>
+        <td>Waste time</td>
+    </tr>
+    <tr>
+        <td>Make Excuses</td>
+    </tr>
+    <tr>
+        <td>Let others decide for you</td>
+    </tr>
+    <tr>
+        <td>Get distracted</td>
     </tr>
 </table>
 
 <h2>Health</h2>
-<table>
+
+<table style="color: green">
     <tr>
         <th>Do</th>
+    </tr>
+    <tr>
+        <td>Consume 500mg/day of Vitamin C</td>
+    </tr>
+    <tr>
+        <td>Low Glycemic Index Foods</td>
+    </tr>
+    <tr>
+        <td>Water (lots)</td>
+    </tr>
+    <tr>
+        <td>Coffee</td>
+    </tr>
+    <tr>
+        <td>Sleep 8 hrs/day</td>
+    </tr>
+    <tr>
+        <td>Exercise vigorously 3-4 mins high intensity, 30 seconds with 90 seconds
+            rest
+        </td>
+    </tr>
+    <tr>
+        <td>Lift weights, Exercise increases mitochondria</td>
+    </tr>
+    <tr>
+        <td><a href="http://www.fourmilab.ch/hackdiet/">Hacker's Diet</a></td>
+    </tr>
+    <tr>
+        <td><a
+                href="http://www.bodybuildingdungeon.com/forums/nutrition/2156-cdk-cyclical.html">Cyclical Ketogenic
+            Diet</a></td>
+    </tr>
+</table>
+<br>
+<table style="color: darkred">
+    <tr>
         <th>Don't</th>
     </tr>
     <tr>
-        <td style="background-color: darkgreen">Consume 500mg/day of Vitamin C</td>
-        <td style="background-color: red">Consume Trans Fats</td>
+        <td>Consume Trans Fats</td>
     </tr>
     <tr>
-        <td style="background-color: darkgreen">Low Glycemic Index Foods</td>
-        <td style="background-color: red">Drink soda or beer</td>
+        <td>Drink soda or beer</td>
     </tr>
     <tr>
-        <td style="background-color: darkgreen">Water (lots)</td>
-        <td style="background-color: red">Reduce Salt intake</td>
+        <td>Reduce Salt intake</td>
     </tr>
     <tr>
-        <td style="background-color: darkgreen">Coffee</td>
-        <td style="background-color: red">Consume Sugar, Fake Sugar, High Fructose Corn Syrup</td>
-    </tr>
-    <tr>
-        <td style="background-color: darkgreen">Sleep 8 hrs/day</td>
-        <td style="background-color: red"></td>
-    </tr>
-    <tr>
-        <td style="background-color: darkgreen">Exercise vigorously 3-4 mins high intensity, 30 seconds with 90 seconds
-            rest
-        </td>
-        <td style="background-color: red"></td>
-    </tr>
-    <tr>
-        <td style="background-color: darkgreen">Lift weights, Exercise increases mitochondria</td>
-        <td style="background-color: red"></td>
-    </tr>
-    <tr>
-        <td style="background-color: darkgreen"><a href="http://www.fourmilab.ch/hackdiet/">Hacker's Diet</a></td>
-        <td style="background-color: red"></td>
-    </tr>
-    <tr>
-        <td style="background-color: darkgreen"><a
-                href="http://www.bodybuildingdungeon.com/forums/nutrition/2156-cdk-cyclical.html">Cyclical Ketogenic
-            Diet</a></td>
-        <td style="background-color: red"></td>
+        <td>Consume Sugar, Fake Sugar, High Fructose Corn Syrup</td>
     </tr>
 </table>
-
 
 <h2>AI</h2>
 
@@ -140,13 +158,17 @@
             .size([height, width - 160]);
 
     var stratify = d3.stratify()
-            .parentId(function(d) { return d.id.substring(0, d.id.lastIndexOf(".")); });
+            .parentId(function (d) {
+                return d.id.substring(0, d.id.lastIndexOf("."));
+            });
 
-    d3.csv("data/aiData.csv", function(error, data) {
+    d3.csv("data/aiData.csv", function (error, data) {
         if (error) throw error;
 
         var root = stratify(data)
-                .sort(function(a, b) { return (a.height - b.height) || a.id.localeCompare(b.id); });
+                .sort(function (a, b) {
+                    return (a.height - b.height) || a.id.localeCompare(b.id);
+                });
 
         cluster(root);
 
@@ -159,22 +181,32 @@
         var node = g.selectAll(".node")
                 .data(root.descendants())
                 .enter().append("g")
-                .attr("class", function(d) { return "node" + (d.children ? " node--internal" : " node--leaf"); })
-                .attr("transform", function(d) { return "translate(" + d.y + "," + d.x + ")"; });
+                .attr("class", function (d) {
+                    return "node" + (d.children ? " node--internal" : " node--leaf");
+                })
+                .attr("transform", function (d) {
+                    return "translate(" + d.y + "," + d.x + ")";
+                });
 
         node.append("circle")
                 .attr("r", 2.5);
 
         node.append("text")
                 .attr("dy", 3)
-                .attr("x", function(d) { return d.children ? -8 : 8; })
-                .style("text-anchor", function(d) { return d.children ? "end" : "start"; })
-                .text(function(d) { return d.id.substring(d.id.lastIndexOf(".") + 1); });
+                .attr("x", function (d) {
+                    return d.children ? -8 : 8;
+                })
+                .style("text-anchor", function (d) {
+                    return d.children ? "end" : "start";
+                })
+                .text(function (d) {
+                    return d.id.substring(d.id.lastIndexOf(".") + 1);
+                });
 
         d3.selectAll("input")
                 .on("change", changed);
 
-        var timeout = setTimeout(function() {
+        var timeout = setTimeout(function () {
             d3.select("input[value=\"cluster\"]")
                     .property("checked", true)
                     .dispatch("change");
@@ -184,7 +216,9 @@
             timeout = clearTimeout(timeout);
             (cluster)(root);
             var t = d3.transition().duration(750);
-            node.transition(t).attr("transform", function(d) { return "translate(" + d.y + "," + d.x + ")"; });
+            node.transition(t).attr("transform", function (d) {
+                return "translate(" + d.y + "," + d.x + ")";
+            });
             link.transition(t).attr("d", diagonal);
         }
     });
@@ -209,157 +243,158 @@
 
 <h2>Genetics</h2>
 <img src="science/dna0.gif"/>
-    <table class="tab2cen">
-        <tr>
-            <td>
-                <b>The Genetic Code</b><br/>
-                <table class="tab2 tab2lef">
-                    <tr>
-                        <td style="text-align:center;"><span class="tt"><strong>Amino Acid</strong></span></td>
-                        <td style="text-align:center;"><span class="tt"><strong>Abb.</strong></span></td>
-                        <td style="text-align:center;"><span class="tt"><strong>SLC</strong></span></td>
-                        <td style="text-align:center;"><span class="tt"><strong>mRNA codons</strong></span></td>
-                    </tr>
-                    <tr>
-                        <td><span class="tt">Alanine </span></td>
-                        <td style="text-align:center;"><span class="tt">Ala</span></td>
-                        <td style="text-align:center;"><span class="tt">A</span></td>
-                        <td><span class="tt">GCA GCC GCG GCU</span></td>
-                    </tr>
-                    <tr>
-                        <td><span class="tt">Arginine</span></td>
-                        <td style="text-align:center;"><span class="tt">Arg</span></td>
-                        <td style="text-align:center;"><span class="tt">R</span></td>
-                        <td><span class="tt">AGA AGG CGA CGC CGG CGU</span></td>
-                    </tr>
-                    <tr>
-                        <td><span class="tt">Asparagine</span></td>
-                        <td style="text-align:center;"><span class="tt">Asn</span></td>
-                        <td style="text-align:center;"><span class="tt">N</span></td>
-                        <td><span class="tt">AAC AAU</span></td>
-                    </tr>
-                    <tr>
-                        <td><span class="tt">Aspartic acid</span></td>
-                        <td style="text-align:center;"><span class="tt">Asp</span></td>
-                        <td style="text-align:center;"><span class="tt">D</span></td>
-                        <td><span class="tt">GAC GAU</span></td>
-                    </tr>
-                    <tr>
-                        <td><span class="tt">Cysteine</span></td>
-                        <td style="text-align:center;"><span class="tt">Cys</span></td>
-                        <td style="text-align:center;"><span class="tt">C</span></td>
-                        <td><span class="tt">UGC UGU</span></td>
-                    </tr>
-                    <tr>
-                        <td><span class="tt">Glutamic acid</span></td>
-                        <td style="text-align:center;"><span class="tt">Glu</span></td>
-                        <td style="text-align:center;"><span class="tt">E</span></td>
-                        <td><span class="tt">GAA GAG</span></td>
-                    </tr>
-                    <tr>
-                        <td><span class="tt">Glutamine</span></td>
-                        <td style="text-align:center;"><span class="tt">Gln</span></td>
-                        <td style="text-align:center;"><span class="tt">Q</span></td>
-                        <td><span class="tt">CAA CAG</span></td>
-                    </tr>
-                    <tr>
-                        <td><span class="tt">Glycine </span></td>
-                        <td style="text-align:center;"><span class="tt">Gly</span></td>
-                        <td style="text-align:center;"><span class="tt">G</span></td>
-                        <td><span class="tt">GGA GGC GGG GGU</span></td>
-                    </tr>
-                    <tr>
-                        <td><span class="tt">Histidine</span></td>
-                        <td style="text-align:center;"><span class="tt">His</span></td>
-                        <td style="text-align:center;"><span class="tt">H</span></td>
-                        <td><span class="tt">CAC CAU</span></td>
-                    </tr>
-                    <tr>
-                        <td><span class="tt">Isoleucine</span></td>
-                        <td style="text-align:center;"><span class="tt">Ile</span></td>
-                        <td style="text-align:center;"><span class="tt">I</span></td>
-                        <td><span class="tt">AUA AUC AUU</span></td>
-                    </tr>
-                    <tr>
-                        <td><span class="tt">Leucine </span></td>
-                        <td style="text-align:center;"><span class="tt">Leu</span></td>
-                        <td style="text-align:center;"><span class="tt">L</span></td>
-                        <td><span class="tt">CUA CUC CUG CUU UUA UUG</span></td>
-                    </tr>
-                    <tr>
-                        <td><span class="tt">Lysine</span></td>
-                        <td style="text-align:center;"><span class="tt">Lys</span></td>
-                        <td style="text-align:center;"><span class="tt">K</span></td>
-                        <td><span class="tt">AAA AAG</span></td>
-                    </tr>
-                    <tr>
-                        <td><span class="tt">Methionine*</span></td>
-                        <td style="text-align:center;"><span class="tt">Met</span></td>
-                        <td style="text-align:center;"><span class="tt">M</span></td>
-                        <td><span class="tt">AUG</span></td>
-                    </tr>
-                    <tr>
-                        <td><span class="tt">Phenylalanine</span></td>
-                        <td style="text-align:center;"><span class="tt">Phe</span></td>
-                        <td style="text-align:center;"><span class="tt">F</span></td>
-                        <td><span class="tt">UUC UUU</span></td>
-                    </tr>
-                    <tr>
-                        <td><span class="tt">Proline </span></td>
-                        <td style="text-align:center;"><span class="tt">Pro</span></td>
-                        <td style="text-align:center;"><span class="tt">P</span></td>
-                        <td><span class="tt">CCA CCC CCG CCU</span></td>
-                    </tr>
-                    <tr>
-                        <td><span class="tt">Serine  </span></td>
-                        <td style="text-align:center;"><span class="tt">Ser</span></td>
-                        <td style="text-align:center;"><span class="tt">S</span></td>
-                        <td><span class="tt">AGC AGU UCA UCC UCG UCU</span></td>
-                    </tr>
-                    <tr>
-                        <td><span class="tt">Threonine</span></td>
-                        <td style="text-align:center;"><span class="tt">Thr</span></td>
-                        <td style="text-align:center;"><span class="tt">T</span></td>
-                        <td><span class="tt">ACA ACC ACG ACU</span></td>
-                    </tr>
-                    <tr>
-                        <td><span class="tt">Tryptophan</span></td>
-                        <td style="text-align:center;"><span class="tt">Trp</span></td>
-                        <td style="text-align:center;"><span class="tt">W</span></td>
-                        <td><span class="tt">UGG</span></td>
-                    </tr>
-                    <tr>
-                        <td><span class="tt">Tyrosine</span></td>
-                        <td style="text-align:center;"><span class="tt">Tyr</span></td>
-                        <td style="text-align:center;"><span class="tt">Y</span></td>
-                        <td><span class="tt">UAC UAU</span></td>
-                    </tr>
-                    <tr>
-                        <td><span class="tt">Valine </span></td>
-                        <td style="text-align:center;"><span class="tt">Val</span></td>
-                        <td style="text-align:center;"><span class="tt">V</span></td>
-                        <td><span class="tt">GUA GUC GUG GUU</span></td>
-                    </tr>
-                    <tr>
-                        <td><span class="tt">Stop codons </span></td>
-                        <td style="text-align:center;"><span class="tt">&nbsp;</span></td>
-                        <td style="text-align:center;"><span class="tt">&nbsp;</span></td>
-                        <td><span class="tt">UAA UAG UGA</span></td>
-                    </tr>
-                    <tr>
-                        <td colspan="4"><br/>
-                            <b>SLC</b> is the single-letter code used to represent the amino acids in protein data bases.<br/>
-                            <b>Codon letters:</b> <span class="tt">A = Adenine, C = Cytosine, G = Guanine, U = Uracil</span><br/>
-                            * <span class="tt">AUG</span> signals "start" of translation when it occurs at the beginning of a gene.<br/>
-                            <br/>
+<table>
+    <tr>
+        <td>
+            <b>The Genetic Code</b><br/>
+            <table>
+                <tr>
+                    <td style="text-align:center;"><strong>Amino Acid</strong></td>
+                    <td style="text-align:center;"><strong>Abb.</strong></td>
+                    <td style="text-align:center;"><strong>SLC</strong></td>
+                    <td style="text-align:center;"><strong>mRNA codons</strong></td>
+                </tr>
+                <tr>
+                    <td>Alanine </td>
+                    <td style="text-align:center;">Ala</td>
+                    <td style="text-align:center;">A</td>
+                    <td>GCA GCC GCG GCU</td>
+                </tr>
+                <tr>
+                    <td>Arginine</td>
+                    <td style="text-align:center;">Arg</td>
+                    <td style="text-align:center;">R</td>
+                    <td>AGA AGG CGA CGC CGG CGU</td>
+                </tr>
+                <tr>
+                    <td>Asparagine</td>
+                    <td style="text-align:center;">Asn</td>
+                    <td style="text-align:center;">N</td>
+                    <td>AAC AAU</td>
+                </tr>
+                <tr>
+                    <td>Aspartic acid</td>
+                    <td style="text-align:center;">Asp</td>
+                    <td style="text-align:center;">D</td>
+                    <td>GAC GAU</td>
+                </tr>
+                <tr>
+                    <td>Cysteine</td>
+                    <td style="text-align:center;">Cys</td>
+                    <td style="text-align:center;">C</td>
+                    <td>UGC UGU</td>
+                </tr>
+                <tr>
+                    <td>Glutamic acid</td>
+                    <td style="text-align:center;">Glu</td>
+                    <td style="text-align:center;">E</td>
+                    <td>GAA GAG</td>
+                </tr>
+                <tr>
+                    <td>Glutamine</td>
+                    <td style="text-align:center;">Gln</td>
+                    <td style="text-align:center;">Q</td>
+                    <td>CAA CAG</td>
+                </tr>
+                <tr>
+                    <td>Glycine </td>
+                    <td style="text-align:center;">Gly</td>
+                    <td style="text-align:center;">G</td>
+                    <td>GGA GGC GGG GGU</td>
+                </tr>
+                <tr>
+                    <td>Histidine</td>
+                    <td style="text-align:center;">His</td>
+                    <td style="text-align:center;">H</td>
+                    <td>CAC CAU</td>
+                </tr>
+                <tr>
+                    <td>Isoleucine</td>
+                    <td style="text-align:center;">Ile</td>
+                    <td style="text-align:center;">I</td>
+                    <td>AUA AUC AUU</td>
+                </tr>
+                <tr>
+                    <td>Leucine </td>
+                    <td style="text-align:center;">Leu</td>
+                    <td style="text-align:center;">L</td>
+                    <td>CUA CUC CUG CUU UUA UUG</td>
+                </tr>
+                <tr>
+                    <td>Lysine</td>
+                    <td style="text-align:center;">Lys</td>
+                    <td style="text-align:center;">K</td>
+                    <td>AAA AAG</td>
+                </tr>
+                <tr>
+                    <td>Methionine*</td>
+                    <td style="text-align:center;">Met</td>
+                    <td style="text-align:center;">M</td>
+                    <td>AUG</td>
+                </tr>
+                <tr>
+                    <td>Phenylalanine</td>
+                    <td style="text-align:center;">Phe</td>
+                    <td style="text-align:center;">F</td>
+                    <td>UUC UUU</td>
+                </tr>
+                <tr>
+                    <td>Proline </td>
+                    <td style="text-align:center;">Pro</td>
+                    <td style="text-align:center;">P</td>
+                    <td>CCA CCC CCG CCU</td>
+                </tr>
+                <tr>
+                    <td>Serine  </td>
+                    <td style="text-align:center;">Ser</td>
+                    <td style="text-align:center;">S</td>
+                    <td>AGC AGU UCA UCC UCG UCU</td>
+                </tr>
+                <tr>
+                    <td>Threonine</td>
+                    <td style="text-align:center;">Thr</td>
+                    <td style="text-align:center;">T</td>
+                    <td>ACA ACC ACG ACU</td>
+                </tr>
+                <tr>
+                    <td>Tryptophan</td>
+                    <td style="text-align:center;">Trp</td>
+                    <td style="text-align:center;">W</td>
+                    <td>UGG</td>
+                </tr>
+                <tr>
+                    <td>Tyrosine</td>
+                    <td style="text-align:center;">Tyr</td>
+                    <td style="text-align:center;">Y</td>
+                    <td>UAC UAU</td>
+                </tr>
+                <tr>
+                    <td>Valine </td>
+                    <td style="text-align:center;">Val</td>
+                    <td style="text-align:center;">V</td>
+                    <td>GUA GUC GUG GUU</td>
+                </tr>
+                <tr>
+                    <td>Stop codons </td>
+                    <td style="text-align:center;">&nbsp;</td>
+                    <td style="text-align:center;">&nbsp;</td>
+                    <td>UAA UAG UGA</td>
+                </tr>
+                <tr>
+                    <td colspan="4"><br/>
+                        <b>SLC</b> is the single-letter code used to represent the amino acids in protein data
+                        bases.<br/>
+                        <b>Codon letters:</b> A = Adenine, C = Cytosine, G = Guanine, U = Uracil<br/>
+                        * AUG signals "start" of translation when it occurs at the beginning of
+                        a gene.<br/>
+                        <br/>
+                    </td>
+                </tr>
+            </table>
+        </td>
 
-                        </td>
-                    </tr>
-                </table>
-            </td>
-
-        </tr>
-    </table>
+    </tr>
+</table>
 <ul>
 
     <li><a href="genetics/rnaGenomeEditing.pdf">RNA-programmed genome editing in human cells</a></li>
