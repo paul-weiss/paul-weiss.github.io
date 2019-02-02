@@ -221,4 +221,45 @@ every day, sleeping it's life away.
 To hell with that," he said, "shake the tree and knock the great sloth down on his ass.
 ― Ray Bradbury, Fahrenheit 451
 
+Below are quotes from Bloomberg by Bloomberg:
+
+If a company can't survive a change at the top, the top person hasn't done her or his job.
+
+Work hard, value education, and do things yourself, whether the labor was mental or physical...it's the "doers," the lean and hungry ones, those with ambition in their eyes and fire in their bellies and no notions of social caste, who go the furthest and achieve the most.
+
+Never let the customer go down the street to another store - he might find they sell the same thing there and not come back...Do the trade today, figure out how to make it profitable tomorrow.
+
+Great financial success comes from starting businesses with concrete products in the real world, bulding jobs, creating value, and helping people.
+
+It's said that 80 percent of life is just showing up.  I believe that, You can never have complete mastery over your existence.  You can't choose the advantages you start out with, and you certainly can't pick your genetic intelligence level.  But you can control how hard you work.  I'm sure someone, someplace, is smart enough to succeed while "keeping it in perspective" and not working too hard, but I've never met him or her.  The more you work, the better you do.  It's that simple.  I always outworked the other person (and if I hadn't, he or she would be writing this book).
+
+Life, I've found, works the follwing way: Daily, your're presented with many small and surprising opportunities.  Sometimes you seize one that takes you to the top.  Most, though, if valuable at all, take you only a little way.  To succeed, you must string together many small incremental advances - rather than count on higgint the lottery jackpot once.  Trusting to great luck is a strategy not likely to work for most people.  As a practical matter, constantly enhance your skills, put in as many hours as possible, and make tactical plans for the next few steps.  Then, based on what actually occurs, look one more move ahead and adjust the plan.  Take lots of chances, and make lots of individual, spur of the moment decisions.
+
+You can only accomplish what's possible when you get there.  Then, whatever your idea is, you've got to do more of it than anyone else - a task that's easier if you structure things so that you like doing them.
+
+Happiness for me has always been the thrill of the unknown, trying something that everyone says can't be done, feeling that gnawing pit in my stomach that says "Danger ahead."
+
+If you're going to succeed, you need a vision, one that's affordable, practical, and fills a customer need.  Then, go for it.  Don't worry too much about the details.  Don't second-guess your creativity.  Avoid overanalyzing the new project's potential.  Most importantly, don't strategize abou tthe long term too much.
+
+Outsiders at best do only what's asked.  Insiders do what's needed.
+
+No big company thinks a little start-up company will ever become a major competitor.  Invariably, by tthe time the big guy catches on, it's too late.
+
+If you're not providing something unique, you have no ability to impose charges.
+
+Limited supply and great demand equal high prices.
+
+Making change is difficult.
+
+90 percent of the costs go into building the last 10 percent of the functionality
+
+You can do a six month software project in twelve months.  You can probably do a twelve month project in two years.  You cannot do a two year project ever.  Humans need to see results in time frames they can handle.
+
+MVP: Minimal Viable Product
+
+As a bachelor who traveled with a big expense account, I had a girlfriend in every city, skied in every resort, ate in every four-star restaurant, and never missed a Broadway play.
+
+
+
+
 ```
