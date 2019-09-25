@@ -1,42 +1,42 @@
-> Recover your health
-
-> Be here right now with me
-
-> It has to be one unified thing
-
-> Am I willing to put in the effort? What is worth putting in the effort? LIFE
-
-> External Consciousness
-
-> All you can control in life is how you react to it
-
-
-> The greatest danger for most of us 
-> is not that we aim too high and we miss
-> rather our aim is too low and we make it.
->> - Michelangelo
-
-> Our struggles determine our successes
-
-> Joy is in the climb itself
-
-> Entitlement is a failed strategy
-
-> Self awareness onion
-
-> Don’t overvalue material success
-
-> What are the values you prioritize the most
-
-> Choose better things to care about
-
-> Take responsibility to all situations you are in regardless of how you got there
-
-> The more something threatens your identity, the more you will avoid doing it.
-
-> Failure is the way forward
 
 ```
+Recover your health
+
+Be here right now with me
+
+It has to be one unified thing
+
+Am I willing to put in the effort? What is worth putting in the effort? LIFE
+
+External Consciousness
+
+All you can control in life is how you react to it
+
+
+The greatest danger for most of us 
+is not that we aim too high and we miss
+rather our aim is too low and we make it.
+- Michelangelo
+
+Our struggles determine our successes
+
+Joy is in the climb itself
+
+Entitlement is a failed strategy
+
+Self awareness onion
+
+Don’t overvalue material success
+
+What are the values you prioritize the most
+
+Choose better things to care about
+
+Take responsibility to all situations you are in regardless of how you got there
+
+The more something threatens your identity, the more you will avoid doing it.
+
+Failure is the way forward
 
 If you’re going to do something, do it to the best of your ability— or don’t waste your time.
 -Tom Coughlin
