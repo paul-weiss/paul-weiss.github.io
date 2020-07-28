@@ -12,5 +12,6 @@
 * A man uses his wife to produce children for him. A woman uses her husband to make and help rear her children.
 * Sex, like marriage, is a cooperative venture between two rival sets of genes.
 * anything that increases reproductive success will spread at the expense of anything that does not - even if it threatens survival.
+* Sex is recombination plus outcrossing: this mixing of genes is is principal feature.  The consequence is that the baby gets a thorough mixture of its four grandparents' genes (because of recombination) and its two parents' genes (because of outcrossing).
 
 
